@@ -1,0 +1,138 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║     GERADOR DE CERTIFICADOS - ASSOCIAÇÃO DEO DE JIU-JITSU          ║
+║                    GUIA DE INSTALAÇÃO                                ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📦 ARQUIVOS INCLUÍDOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. GeradorCertificados.exe (ou GeradorCertificados para Mac)
+2. CERTIFICADO BASE.jpg
+3. Myriad Pro Bold Italic.ttf
+4. myriad-pro-semibold-italic.otf
+5. gerar certificados_gerados/ (pasta com Controle de Diplomas.xlsx)
+
+
+📁 ESTRUTURA DE PASTAS NECESSÁRIA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MinhaPasta/
+├── GeradorCertificados.exe          ← Executável principal
+├── CERTIFICADO BASE.jpg              ← Imagem do certificado base
+├── Myriad Pro Bold Italic.ttf        ← Fonte Bold
+├── myriad-pro-semibold-italic.otf    ← Fonte Semibold
+└── gerar certificados_gerados/       ← Pasta com dados
+    └── Controle de Diplomas.xlsx     ← Planilha Excel com informações
+
+
+🚀 COMO USAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PASSO 1: Organize os arquivos
+   → Coloque todos os arquivos conforme a estrutura acima
+   → Certifique-se de que a pasta tem o nome exato: "gerar certificados_gerados"
+
+2. PASSO 2: Edite o arquivo Excel
+   → Abra o arquivo "Controle de Diplomas.xlsx"
+   → Edite os dados na aba "2025"
+   → Adicione ou modifique os dados das pessoas
+   → Salve o arquivo
+
+3. PASSO 3: Execute o programa
+   → Windows: Duplo clique em GeradorCertificados.exe
+   → Mac: Abra o Terminal e execute: ./GeradorCertificados
+
+4. PASSO 4: Aguarde
+   → O programa vai criar a pasta "certificado_final"
+   → Os certificados serão gerados em PDF
+
+5. PASSO 5: Verifique os resultados
+   → Abra a pasta "certificado_final"
+   → Todos os certificados estarão lá em formato PDF
+
+
+📝 FORMATO DO EXCEL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A planilha "Controle de Diplomas.xlsx" deve ter a seguinte estrutura:
+
+Aba: 2025
+┌────────────────────────┬──────────────────┬────────────┬─────────┬──────┬───────────┐
+│ Nome                   │ Registro         │ Graduação  │ Data    │      │ Key User  │
+├────────────────────────┼──────────────────┼────────────┼─────────┼──────┼───────────┤
+│ Nome Completo          │ CPF: 123.456.789 │ PRETA      │         │      │ 001/2025  │
+│ Outro Nome             │ RG: 12.345.678   │ ROXA       │         │      │ 002/2025  │
+└────────────────────────┴──────────────────┴────────────┴─────────┴──────┴───────────┘
+
+Colunas:
+- Coluna A: Nome completo
+- Coluna B: Registro (CPF, RG, etc)
+- Coluna C: Graduação (PRETA, ROXA, AZUL, VERDE, LARANJA, etc)
+- Coluna D: Data (não usado)
+- Coluna E: (vazio)
+- Coluna F: Key User (numeração do certificado, ex: 001/2025)
+
+
+⚠️ IMPORTANTE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Não mude o nome da pasta "gerar certificados_gerados"
+✓ Não mude o nome do arquivo "Controle de Diplomas.xlsx"
+✓ Não mude o nome "CERTIFICADO BASE.jpg"
+✓ Mantenha as fontes na mesma pasta do executável
+✓ Os dados devem estar na aba "2025" do Excel
+✓ A primeira linha é o cabeçalho, os dados começam na linha 2
+
+
+🔧 SOLUÇÃO DE PROBLEMAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "Arquivo não encontrado"
+   → Verifique se todos os arquivos estão presentes
+   → Confirme os nomes exatos (com espaços e maiúsculas)
+
+❌ "Fontes não encontradas"
+   → Coloque os arquivos .ttf e .otf na mesma pasta do .exe
+   → Verifique os nomes dos arquivos de fonte
+
+❌ "Nenhum dado encontrado no Excel"
+   → Verifique se há dados na aba "2025"
+   → Certifique-se de que a coluna A (Nome) está preenchida
+   → Os dados devem começar na linha 2 (linha 1 é cabeçalho)
+
+❌ No Windows: "Vírus detectado" ou "Arquivo bloqueado"
+   → É um falso positivo (comum com executáveis PyInstaller)
+   → Clique em "Mais informações" → "Executar assim mesmo"
+   → Ou adicione exceção no antivírus
+
+
+📧 CAMPOS DO EXCEL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Coluna A (Nome)      → Nome completo da pessoa
+Coluna B (Registro)  → CPF, RG ou outro identificador
+Coluna C (Graduação) → Faixa (PRETA, ROXA, AZUL, VERDE, LARANJA, etc.)
+Coluna F (Key User)  → Numeração do certificado (formato: 001/2025)
+
+
+✨ RESULTADO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Os certificados serão salvos em:
+MinhaPasta/certificado_final/
+├── 1-Nome Completo.pdf
+├── 2-Outro Nome.pdf
+└── ...
+
+Cada certificado terá:
+✓ Fontes Myriad Pro
+✓ Texto centralizado
+✓ Graduação em negrito
+✓ Data atual em português
+✓ Alta qualidade para impressão
+
+
+═══════════════════════════════════════════════════════════════════════
+                    Desenvolvido para:
+           ASSOCIAÇÃO DEO DE JIU-JITSU
+═══════════════════════════════════════════════════════════════════════
+
